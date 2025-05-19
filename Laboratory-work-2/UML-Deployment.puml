@@ -1,0 +1,14 @@
+@startuml
+node "Client PC" {
+    component "Frontend App"
+}
+node "Web Server" {
+    component "Backend API"
+}
+node "Database Server" {
+    database "PostgreSQL"
+}
+
+"Frontend App" --> "Backend API"
+"Backend API" --> "PostgreSQL"
+@enduml
